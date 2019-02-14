@@ -19,7 +19,6 @@ body {
 
 .quakeContainer {
   width: 40%;
-  padding-top: 2em; 
-  padding-right: 2em;
+  padding: 2%;
   background-color: pink;
 }
