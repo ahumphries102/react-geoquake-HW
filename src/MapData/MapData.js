@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
-const Marker = ({ text }) => <div>{text}</div>;
+const Marker = ({ icon }) => <img src={icon} alt='Earthquake Icons' />;
 
 class SimpleMap extends Component {
   static defaultProps = {
@@ -18,7 +18,7 @@ class SimpleMap extends Component {
           key={i}
           lat={earthquakes.geometry.coordinates[1]}
           lng={earthquakes.geometry.coordinates[0]}
-          text={earthquakes.properties.title}
+          icon={'../images/earthquake.png'}
           />
         })
     return (
